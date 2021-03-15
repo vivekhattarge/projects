@@ -34,6 +34,12 @@ public class UserController {
         return Status.FAILURE;
     }
 
+@CrossOrigin()
+    @GetMapping("/users")
+    public List<User> getUsers(){
+        return userRepository.findAll();
+    }
+
     @CrossOrigin()
     @PostMapping("/users/logout")
     public Status logUserOut(@Valid @RequestBody User user) {
