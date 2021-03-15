@@ -1,2 +1,2 @@
-- It is Intellij IDEA project.
+- It is Intellij IDEA project .
 - I have used gradle for packaging.
